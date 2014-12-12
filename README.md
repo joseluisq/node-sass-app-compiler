@@ -1,7 +1,6 @@
 # Nodejs Sass Compiler
 
-Nodejs compilador para Sass
-
+Compilador Nodejs para Sass
 
 ## Instalación
 ```sh
@@ -10,7 +9,7 @@ $ npm install
 
 ## Configuración (opcional)
 
-Es posible cambiar ruta de compilación editando el archivo `Gruntfile.js` y actualizando los valores de la variable config:
+Es posible cambiar la ruta de compilación editando el archivo `Gruntfile.js` y actualizando los valores de la variable config:
 
 ```js
 var config = {
@@ -21,13 +20,17 @@ var config = {
 
 ## Uso
 
-**Iniciar compilador para desarrollo:**
+### Iniciar compilador para desarrollo:
+
+Similar a: `compass watch`
 
 ```sh
 $ grunt serve
 ```
 
-**Compilar Sass para producción:**
+### Compilar Sass para producción:
+
+Similar a: `compass compile -e production --force`
 
 ```sh
 $ grunt build

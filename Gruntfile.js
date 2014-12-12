@@ -3,7 +3,8 @@ module.exports = function(grunt) {
 
   var config = {
     dist: './css',
-    src: './scss'
+    src: './scss',
+    style: 'style'
   };
 
   require('time-grunt')(grunt);
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.src %>',
-          src: ['*.{scss,sass}'],
+          src: ['<%= config.style %>.{scss,sass}'],
           dest: '<%= config.dist %>',
           ext: '.css'
         }]

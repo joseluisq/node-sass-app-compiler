@@ -14,8 +14,14 @@ Es posible cambiar la ruta de compilación editando el archivo `Gruntfile.js` y 
 ```js
 var config = {
   dist: './css',  // Ruta de salida para la compilación (output)
-  src: './scss'  // Ruta de archivos Sass fuente para compilación. (source)
+  src: './scss',  // Ruta de archivos Sass fuente para compilación. (source)
+  style: 'style'  // Nombre del archivo Sass principal.
 }
+```
+**Nota:** Por defecto, Grunt compilará Sass un solo archivo CSS, en este caso se llama ` style`,  pero también es posible compilar todos los archivos Sass fuente. Para ello cambiar el valor de la propiedad `style` : 
+
+```js
+style: '*'  // Compilar todos los archivos `.scss` o `.sass`
 ```
 
 ## Uso
